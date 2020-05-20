@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+      "target": "es6",
+      "module": "commonjs",
+      "moduleResolution": "node",
+      "sourceMap": false,
+      "declaration": false,
+      "removeComments": true,
+      "noImplicitAny": true,
+      "noEmitOnError": true,
+      "outDir": "tests/e2e/js",
+      "strictNullChecks": true,
+      "experimentalDecorators": true,
+      "noImplicitThis": true,
+      "types": ["jasmine", "jasminewd2", "node"],
+      "lib": ["dom", "es2018"]
+  },
+  "exclude": ["node_modules"],
+  "include": ["tests/e2e/ts/**/*"]
+}
