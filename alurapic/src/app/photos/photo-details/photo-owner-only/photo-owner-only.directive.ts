@@ -1,4 +1,4 @@
-import { Directive, Renderer, OnInit } from "@angular/core";
+import { Directive, OnInit, Renderer2 } from "@angular/core";
 import { Photo } from "../../photo/photo";
 import { Input } from "@angular/core";
 import { ElementRef } from "@angular/core";
@@ -13,7 +13,7 @@ export class PhotoOwnerOnlyDirective implements OnInit {
     
     constructor(
         private element: ElementRef<any>,
-        private renderer: Renderer,
+        private renderer: Renderer2,
         private userService: UserService
     ) {}
 
@@ -22,9 +22,7 @@ export class PhotoOwnerOnlyDirective implements OnInit {
             .getUser()
             .subscribe(user => {
                 if(!user || user.id != this.ownedPhoto.userId) {
-                    this.renderer.setElementStyle(
-                        this.element.nativeElement, 'display', 'none'
-                    );
+                    this.renderer.setStyle(this.element.nativeElement, 'display', 'none');
                 }
             });
     }
