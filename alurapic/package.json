@@ -63,7 +63,7 @@
     "karma-jasmine": "~1.1.1",
     "karma-jasmine-html-reporter": "^0.2.2",
     "kind-of": ">=6.0.3",
-    "minimist": ">=0.2.1",
+    "minimist": ">=1.2.6",
     "protractor": "^7.0.0",
     "serialize-javascript": ">=2.1.1",
     "websocket-extensions": ">=0.1.4"
