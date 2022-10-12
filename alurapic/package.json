@@ -30,7 +30,7 @@
     "eslint": "^7.1.0",
     "font-awesome": "^4.7.0",
     "jasmine-allure2-reporter": "^1.2.0",
-    "jasmine-reporters": "^2.3.2",
+    "jasmine-reporters": "^2.5.0",
     "jwt-decode": "^2.2.0",
     "node-gyp": "^6.1.0",
     "node-sass": "^4.14.1",
